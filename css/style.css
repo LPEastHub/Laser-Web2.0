@@ -1,0 +1,380 @@
+:root {
+    /* Updated Light Mode Variables matching your image */
+    --school-primary: #000080; /* Deep Navy Blue from header/footer */
+    --school-primary-light: #0000a0; /* Slightly lighter for hover states */
+    --school-accent: #F4A261; /* Keeping orange for minor highlights if needed */
+    --school-accent-hover: #e38d47;
+    --bg-main: #E2E2E2; /* Solid light gray background from your image */
+    --bg-secondary: #E2E2E2;
+    --bg-card: #ffffff;
+    --text-dark: #1F2937;
+    --text-muted: #6B7280;
+    --border-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Dark Mode Variables */
+[data-theme="dark"] {
+    --school-primary: #1e3a8a; 
+    --school-primary-light: #2563eb;
+    --school-accent: #F4A261;
+    --school-accent-hover: #fb923c;
+    --bg-main: #0f172a;
+    --bg-secondary: #1e293b;
+    --bg-card: #1e293b;
+    --text-dark: #f8fafc;
+    --text-muted: #cbd5e1;
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-dark);
+    /* Changed to solid color instead of gradient to match the image */
+    background-color: var(--bg-main); 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Text overrides for dark mode */
+.text-muted { color: var(--text-muted) !important; }
+
+/* Header - Updated to Solid Deep Blue */
+.main-header .navbar {
+    background-color: var(--school-primary) !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-bottom: none;
+    transition: all 0.3s ease;
+}
+
+/* Navigation Links - Updated to White */
+.nav-link {
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    padding: 0.5rem 1.2rem !important;
+    color: #ffffff !important; /* Force white text in navbar */
+    transition: all 0.3s ease;
+    position: relative;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 5px;
+    left: 50%;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+.nav-link:hover::after, .nav-link:focus::after {
+    width: 60%;
+}
+.nav-link:hover, .nav-link:focus {
+    color: #e0e0e0 !important;
+}
+
+.dropdown-menu {
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-card);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    padding: 0.5rem;
+    animation: fadeInDown 0.3s ease forwards;
+}
+.dropdown-item {
+    color: var(--text-dark);
+    border-radius: 6px;
+    padding: 0.6rem 1rem;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+.dropdown-item:hover {
+    background-color: rgba(0, 0, 128, 0.05);
+    color: var(--school-primary);
+    transform: translateX(5px);
+}
+
+/* Buttons */
+.btn {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.btn-primary {
+    background-color: var(--school-primary); /* Matching the 'Get Started' button in the image */
+    color: white !important;
+    border: none;
+    border-radius: 8px !important; /* Squarer look to match the image */
+}
+.btn-primary:hover {
+    background-color: var(--school-primary-light);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 128, 0.2);
+}
+
+.btn-secondary-custom {
+    background-color: var(--bg-card);
+    color: var(--text-dark);
+    border: 1px solid var(--border-color);
+}
+.btn-secondary-custom:hover {
+    background-color: #f0f0f0;
+    color: var(--school-primary);
+    transform: translateY(-3px);
+}
+
+.btn-login {
+    background-color: var(--bg-card); /* White button for login on blue background */
+    color: var(--school-primary) !important;
+    border: none;
+}
+.btn-login:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.theme-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.theme-btn:hover {
+    background-color: white;
+    color: var(--school-primary);
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 6rem 0;
+    position: relative;
+}
+
+.main-headline {
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--text-dark); /* Changed to dark text so it shows up on the gray background */
+}
+
+.badge-custom {
+    background-color: rgba(0, 0, 128, 0.08);
+    color: var(--school-primary);
+    border: 1px solid var(--border-color);
+}
+
+/* Carousel Adjustments */
+.carousel-wrapper {
+    position: relative;
+    padding: 10px;
+}
+.carousel-container {
+    border: 4px solid var(--bg-card);
+    border-radius: 8px !important; /* Slightly sharper corners matching the image */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.carousel-item img {
+    height: 450px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Modals */
+.modal-content {
+    border-radius: 1rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.custom-modal-bg {
+    background-color: var(--bg-card);
+}
+.guide-card {
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color) !important;
+    background: var(--bg-main) !important;
+    color: var(--text-dark);
+}
+
+/* Footer - Updated to Solid Deep Blue matching the header */
+.footer-section {
+    background-color: var(--school-primary);
+    color: #ffffff; /* White text for contrast */
+    margin-top: auto;
+    border-top: none;
+}
+.footer-section h4, 
+.footer-section h5, 
+.footer-section strong, 
+.footer-section p {
+    color: #ffffff !important;
+}
+.footer-section .text-secondary {
+    color: #e0e0e0 !important; /* Lighter gray for secondary text */
+}
+
+.footer-icon-wrapper {
+    background: #ffffff;
+    padding: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.social-icon {
+    color: #ffffff;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.social-icon:hover {
+    color: #cccccc;
+    transform: scale(1.1) translateY(-3px);
+}
+.phone-link {
+    color: #ffffff;
+    font-weight: 600;
+}
+.phone-link:hover {
+    text-decoration: underline !important;
+}
+.map-container {
+    border-radius: 8px;
+    padding: 4px;
+    background: #ffffff;
+}
+.map-container iframe {
+    border-radius: 4px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Timeline UI Specifics for About Page --- */
+.text-primary-custom {
+    color: var(--school-primary);
+}
+[data-theme="dark"] .text-primary-custom {
+    color: var(--school-primary-light);
+}
+
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px; /* Aligns with the center of the icons */
+    height: 100%;
+    width: 4px;
+    background: var(--school-primary);
+    opacity: 0.2;
+    border-radius: 2px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding-left: 60px; /* Space for the line and icon */
+}
+
+.timeline-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--school-primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.timeline-content {
+    background-color: var(--bg-card) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+/* Specific Dark Mode Tweaks for Timeline */
+[data-theme="dark"] .timeline-content {
+    border: 1px solid var(--border-color) !important;
+}
+[data-theme="dark"] .timeline-icon.bg-warning {
+    background-color: var(--school-accent) !important;
+}
+
+/* --- Org Chart UI Specifics --- */
+.org-chart-container .transition-transform {
+    transition: transform 0.4s ease;
+}
+
+.org-chart-container:hover .transition-transform {
+    transform: scale(1.02);
+}
+
+.org-chart-container:hover .overlay {
+    opacity: 1 !important;
+}
+
+/* Ensure modal content handles wide images gracefully */
+.modal-body {
+    background-color: var(--bg-main);
+}
+
+/* --- Contact Page Specifics --- */
+.custom-social-btn {
+    transition: all 0.3s ease;
+}
+
+.custom-social-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hover-primary:hover {
+    color: var(--school-primary) !important;
+}
+
+/* Make inputs look good in dark mode if you're using it */
+[data-theme="dark"] .form-control {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--school-primary);
+    color: var(--text-dark);
+}
+
+/* --- Additions for FAQ Page --- */
+body.dark-mode .dark-mode-box {
+    background-color: var(--card-bg) !important;
+}
+
+body.dark-mode .accordion-item {
+    background-color: var(--card-bg);
+    border-color: #444 !important;
+}
+
+body.dark-mode .accordion-button {
+    background-color: var(--card-bg);
+    color: var(--text-dark);
+}
+
+body.dark-mode .accordion-button:not(.collapsed) {
+    background-color: rgba(13, 110, 253, 0.1); /* Slight blue tint when open */
+    color: #6ea8fe; 
+}

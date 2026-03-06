@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.A.P. Portal | LASER-web</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    
+    <header class="sticky-top main-header">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+                    <img class="logo rounded-circle shadow-sm bg-white" src="images/Optimized-LR_favicon.jpg" alt="LPENHS Logo" width="55" height="55" onerror="this.src='https://via.placeholder.com/55'">
+                    <img class="title d-none d-sm-block" src="images/LR_logo-removebg-preview.png" alt="LASER-web" width="160" onerror="this.style.display='none'">
+                </a>
+                
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-1">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                            <ul class="dropdown-menu shadow-sm" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="about.html">LPENHS Profile</a></li>
+                                <li><a class="dropdown-item" href="EastHubPortal.html">Organizational Chart</a></li>
+                                <li><a class="dropdown-item" href="EastHubPortal.html">News & Updates</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                            <ul class="dropdown-menu shadow-sm" aria-labelledby="resourcesDropdown">
+                                <li><a class="dropdown-item fw-bold text-primary" href="MAP.html"><i class="fas fa-chart-bar me-2"></i>M.A.P. Portal</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-folder me-2 text-muted"></i>D.R.I.V.E.</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="deptDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Departments</a>
+                            <ul class="dropdown-menu shadow-sm" aria-labelledby="deptDropdown">
+                                <li><a class="dropdown-item" href="Araling Panlipunan.html" target="_blank">Araling Panlipunan</a></li>
+                                <li><a class="dropdown-item" href="English.html">English</a></li>
+                                <li><a class="dropdown-item" href="ESP.html">ESP</a></li>
+                                <li><a class="dropdown-item" href="Filipino.html">Filipino</a></li>
+                                <li><a class="dropdown-item" href="Science.html">Science</a></li>
+                                <li><a class="dropdown-item" href="MAPEH.html">MAPEH</a></li>
+                                <li><a class="dropdown-item" href="Mathematics.html">Mathematics</a></li>
+                                <li><a class="dropdown-item" href="TLE.html">TLE</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="officesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Offices</a>
+                            <ul class="dropdown-menu shadow-sm" aria-labelledby="officesDropdown">
+                                <li><a class="dropdown-item" href="#" target="_blank">Principal's Office</a></li>
+                                <li><a class="dropdown-item" href="#">Guidance Office</a></li>
+                                <li><a class="dropdown-item" href="#">Clinic</a></li>
+                                <li><a class="dropdown-item" href="#">Records</a></li>
+                                <li><a class="dropdown-item" href="#">SBM</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="helpDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Help</a>
+                            <ul class="dropdown-menu shadow-sm" aria-labelledby="helpDropdown">
+                                <li><a class="dropdown-item" href="FAQ_Laser_web.pdf" target="_blank"><i class="fas fa-question-circle me-2 text-muted"></i>FAQs</a></li>
+                                <li><a class="dropdown-item" href="contact.html"><i class="fas fa-headset me-2 text-muted"></i>Contact Us</a></li>    
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="https://forms.office.com/pages/..." target="_blank"><i class="fas fa-envelope me-2 text-muted"></i>Leave A Message</a></li>    
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-lg-3 my-3 my-lg-0 d-flex align-items-center gap-3">
+                            <button id="themeToggle" class="btn btn-sm rounded-circle theme-btn shadow-sm" title="Toggle Dark Mode">
+                                <i class="fas fa-moon" id="themeIcon"></i>
+                            </button>
+                            <a class="btn btn-login fw-bold px-4 rounded-pill shadow-sm" href="https://login.microsoftonline.com/" target="_blank" rel="noopener">
+                                <i class="fab fa-windows me-2"></i>Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container flex-grow-1 py-5">
+        
+        <div class="text-center mb-5">
+            
+            <span class="badge bg-primary bg-opacity-10 text-primary mb-2 px-3 py-2 rounded-pill fw-semibold border border-primary-subtle">Directory</span>
+            <h1 class="display-5 fw-bold" style="color: var(--school-primary);">M.A.P. Portal</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 600px;">
+                Select your Grade Level and Section below to access your Master Academic Portfolio safely and securely via Microsoft SharePoint.
+            </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            
+            <div class="col-md-6 col-lg-3">
+                <div class="card map-card h-100 border-0 shadow-sm rounded-4">
+                    <div class="card-header bg-transparent border-0 pt-4 pb-0 text-center">
+                        <div class="icon-circle bg-primary bg-opacity-10 text-primary mb-3 mx-auto d-flex align-items-center justify-content-center rounded-circle" style="width: 60px; height: 60px;">
+                            <i class="fas fa-user-graduate fs-4"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-0">Grade 7</h3>
+                    </div>
+                    <div class="card-body d-flex flex-column text-center pb-4">
+                        <label for="grade7Select" class="form-label small text-muted mb-2">Choose your section</label>
+                        <select class="form-select border-secondary-subtle shadow-none mb-3" id="grade7Select" onchange="displaySection('grade7Select', 'grade7Output')">
+                            <option selected disabled>Select Section...</option>
+                        </select>
+                        <div id="grade7Output" class="mt-auto min-h-output"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card map-card h-100 border-0 shadow-sm rounded-4">
+                    <div class="card-header bg-transparent border-0 pt-4 pb-0 text-center">
+                        <div class="icon-circle bg-success bg-opacity-10 text-success mb-3 mx-auto d-flex align-items-center justify-content-center rounded-circle" style="width: 60px; height: 60px;">
+                            <i class="fas fa-book-reader fs-4"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-0">Grade 8</h3>
+                    </div>
+                    <div class="card-body d-flex flex-column text-center pb-4">
+                        <label for="grade8Select" class="form-label small text-muted mb-2">Choose your section</label>
+                        <select class="form-select border-secondary-subtle shadow-none mb-3" id="grade8Select" onchange="displaySection('grade8Select', 'grade8Output')">
+                            <option selected disabled>Select Section...</option>
+                        </select>
+                        <div id="grade8Output" class="mt-auto min-h-output"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card map-card h-100 border-0 shadow-sm rounded-4">
+                    <div class="card-header bg-transparent border-0 pt-4 pb-0 text-center">
+                        <div class="icon-circle bg-warning bg-opacity-10 text-warning mb-3 mx-auto d-flex align-items-center justify-content-center rounded-circle" style="width: 60px; height: 60px;">
+                            <i class="fas fa-laptop-code fs-4"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-0">Grade 9</h3>
+                    </div>
+                    <div class="card-body d-flex flex-column text-center pb-4">
+                        <label for="grade9Select" class="form-label small text-muted mb-2">Choose your section</label>
+                        <select class="form-select border-secondary-subtle shadow-none mb-3" id="grade9Select" onchange="displaySection('grade9Select', 'grade9Output')">
+                            <option selected disabled>Select Section...</option>
+                        </select>
+                        <div id="grade9Output" class="mt-auto min-h-output"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card map-card h-100 border-0 shadow-sm rounded-4">
+                    <div class="card-header bg-transparent border-0 pt-4 pb-0 text-center">
+                        <div class="icon-circle bg-danger bg-opacity-10 text-danger mb-3 mx-auto d-flex align-items-center justify-content-center rounded-circle" style="width: 60px; height: 60px;">
+                            <i class="fas fa-award fs-4"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-0">Grade 10</h3>
+                    </div>
+                    <div class="card-body d-flex flex-column text-center pb-4">
+                        <label for="grade10Select" class="form-label small text-muted mb-2">Choose your section</label>
+                        <select class="form-select border-secondary-subtle shadow-none mb-3" id="grade10Select" onchange="displaySection('grade10Select', 'grade10Output')">
+                            <option selected disabled>Select Section...</option>
+                        </select>
+                        <div id="grade10Output" class="mt-auto min-h-output"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer-section pt-5 pb-2 mt-5">
+        <div class="container">
+            <div class="row g-5 mb-4">
+                <div class="col-lg-6">
+                    <div class="pe-lg-5">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <img src="images/Optimized-LR_favicon.jpg" width="50" class="rounded-circle bg-white p-1" alt="Logo" onerror="this.src='https://via.placeholder.com/50'">
+                            <h4 class="fw-bold mb-0 text-white">LASER-web</h4>
+                        </div>
+                        <p class="text-secondary mb-4">Empowering the students and faculty of Las Piñas East National High School through seamless digital integration and accessible resources.</p>
+                        
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <i class="fas fa-map-marker-alt mt-1 fs-5 text-primary"></i>
+                            <div>
+                                <strong class="text-white">Las Piñas East National High School</strong><br>
+                                <span class="text-secondary">Kasoy St., Verdant Acres Subd.,<br>Pamplona III, Las Piñas City</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <i class="fas fa-phone-alt fs-5 text-primary"></i>
+                            <a href="tel:(02)88733117" class="text-decoration-none phone-link">(02) 8-873-3117</a>
+                        </div>
+                        
+                        <ul class="list-unstyled d-flex gap-3 mb-0">
+                            <li><a href="https://www.facebook.com/profile.php?id=100084733710812" target="_blank" class="social-icon"><i class="fab fa-facebook fa-2x"></i></a></li>
+                            <li><a href="mailto:305434@depedlaspinas.ph" class="social-icon"><i class="fas fa-envelope fa-2x"></i></a></li>
+                            <li><a href="https://www.instagram.com/lpenhs305434/" target="_blank" class="social-icon"><i class="fab fa-instagram fa-2x"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCnb9HCbZt0ViL-a7O4MeIpg" target="_blank" class="social-icon"><i class="fab fa-youtube fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h5 class="fw-bold mb-4 text-uppercase tracking-wide">Campus Location</h5>
+                    <div class="map-container rounded-4 overflow-hidden shadow-sm border border-secondary border-opacity-25">
+                        <iframe src="https://maps.google.com/maps?q=Las%20Piñas%20East%20National%20High%20School&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="border-secondary opacity-25">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center py-2 text-secondary">
+                <p class="mb-0 small">© 2026 LPENHS-EastLink Creators. All rights reserved.</p>
+                <p class="mb-0 small">Designed for LPENHS</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/map.js"></script>
+</body>
+</html>

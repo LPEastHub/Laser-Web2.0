@@ -1,0 +1,317 @@
+body {
+  font-family: "Montserrat";
+  background-color: black;
+  color:gold;
+  margin: auto;
+/* Add this property to enable vertical scrolling */
+}
+
+header {
+  padding-bottom: 5%;
+  margin: 0;
+  height: 6rem;
+  animation: fadeInDown 1s ease-out;
+}
+
+.container-fluid {
+  padding: 0.5%;
+  margin: 0;
+  position: fixed;
+}
+
+h1, h2 {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+  color: gold;
+  text-align: center; 
+
+}
+
+h3 {
+  font-weight: bolder;
+  font-size: 2.5rem;
+  text-align: center;
+  color: gold;
+}
+
+h4 {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+/* Add a media query for smaller screens */
+@media (max-width: 768px) {
+  h1, h2 {
+      font-size: 2.5rem;
+  }
+
+  h3 {
+      font-size: 1.2rem;
+  }
+}
+
+div.container {
+  height: 4rem;
+  margin: auto;
+}
+
+a.navbar-brand {
+  height: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+nav {
+  padding: 2%;
+  background-color:gold;
+}
+
+.logo {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+
+.prof-pic {
+  height: 30rem;
+  padding: 2rem;
+}
+
+.btn,
+a.nav-link {
+  background-color: gold;
+  color: black;
+  font-weight: 1000;
+  font-size: larger;
+}
+
+/* Add a media query for smaller screens */
+@media (max-width: 768px) {
+  .btn,
+  a.nav-link {
+      font-size: medium;
+  }
+}
+
+div h1 {
+  padding-top: 2%;
+}
+
+
+
+div button {
+  padding: 0;
+}
+
+nav.navbar {
+  height: 4.5rem;
+  padding: 0;
+}
+
+ul.social-media,
+ul.social-media-foot {
+  list-style: none;
+  padding: 2%;
+  margin-bottom: 2%;
+}
+
+li.sc-link,
+li.sc-link-foot {
+  display: inline;
+  padding: 1%;
+  height: 4rem;
+  text-decoration: none;
+}
+
+.sc-link a,
+.sc-link-foot a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.social-media li {
+  animation: fadeIn 1s ease-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.background-image-div {
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  z-index: -1 ; 
+  position: relative;/* Set your desired height */
+}
+
+.background-image-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: -1; /* Maintain image aspect ratio while covering the entire div */
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.carousel-container {
+  margin-top: 20px;
+  margin: auto; 
+  position: relative;
+  z-index: -1;
+  /* Adjust this value based on your design */
+}
+
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-radius: 10%;
+  border-width: 5px;
+  border-color: black;
+}
+
+.carousel-item {
+    width: 100%;
+    margin: auto;
+}
+
+
+footer {
+  background-color:gold;
+  color: black;
+  height: auto;
+  width: 100%;
+  
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.spin-animation {
+  animation: spin 10s linear infinite;
+}
+
+.login-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 500px;
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #395a7f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: gold;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.forgot-password {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.modal-body {
+  text-align: justify;
+  color: #000080;
+}
+
+.history {
+  background-image: url('../images/AP.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 105%;
+  height: 100vh;
+
+  margin: 2%;
+  
+  
+  z-index: 1;
+}
+.LRC {
+  text-align: justify;
+}
+
+.orgchart {
+  opacity: 0.5;
+}
+
+.orgchart:hover {
+  opacity: 1;
+}
+
+.contact{
+  background-image: url('../images/LP_bg.png');
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* This allows 'main' to grow and take up space */
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About LPENHS | LASER-web</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    
+    <header class="sticky-top main-header">
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+                    <img class="logo rounded-circle shadow-sm bg-white" src="images/Optimized-LR_favicon.jpg" alt="LPENHS Logo" width="55" height="55" onerror="this.src='https://via.placeholder.com/55'">
+                    <img class="title d-none d-sm-block" src="images/LR_logo-removebg-preview.png" alt="LASER-web" width="160" onerror="this.style.display='none'">
+                </a>
+                
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-2">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item active" href="about.html">LPENHS Profile</a></li>
+                                <li><a class="dropdown-item" href="EastHubPortal.html">Organizational Chart</a></li>
+                                <li><a class="dropdown-item" href="EastHubPortal.html">News & Updates</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                            <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                                <li><a class="dropdown-item" href="https://lrmds.deped.gov.ph/create/" target="_blank">M.A.P. Portal</a></li>
+                                <li><a class="dropdown-item" href="#">D.R.I.V.E.</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="deptDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Departments</a>
+                            <ul class="dropdown-menu" aria-labelledby="deptDropdown">
+                                <li><a class="dropdown-item" href="#" target="_blank">Araling Panlipunan</a></li>
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">ESP</a></li>
+                                <li><a class="dropdown-item" href="#">Filipino</a></li>
+                                <li><a class="dropdown-item" href="#">Science</a></li>
+                                <li><a class="dropdown-item" href="#">MAPEH</a></li>
+                                <li><a class="dropdown-item" href="#">Mathematics</a></li>
+                                <li><a class="dropdown-item" href="#">TLE</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="officesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Offices</a>
+                            <ul class="dropdown-menu" aria-labelledby="officesDropdown">
+                                <li><a class="dropdown-item" href="#" target="_blank">Principal's Office</a></li>
+                                <li><a class="dropdown-item" href="#">Guidance Office</a></li>
+                                <li><a class="dropdown-item" href="#">Clinic</a></li>
+                                <li><a class="dropdown-item" href="#">Records</a></li>
+                                <li><a class="dropdown-item" href="#">SBM</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="helpDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Help</a>
+                            <ul class="dropdown-menu" aria-labelledby="helpDropdown">
+                                <li><a class="dropdown-item" href="FAQ_Laser_web.pdf" target="_blank">FAQs</a></li>
+                                <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>    
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#" target="_blank">Leave A Message</a></li>    
+                            </ul>
+                        </li>
+
+                        <li class="nav-item ms-lg-3 my-3 my-lg-0 d-flex align-items-center gap-3">
+                            <button id="themeToggle" class="btn btn-sm rounded-circle theme-btn shadow-sm" title="Toggle Dark Mode" style="width: 36px; height: 36px;">
+                                <i class="fas fa-moon"></i>
+                            </button>
+                            <a class="btn btn-login px-4 rounded-pill shadow" href="https://login.microsoftonline.com/" target="_blank" rel="noopener">
+                                <i class="fab fa-windows me-2"></i>Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-banner text-center py-5 mb-5 shadow-sm" style="background-color: var(--school-primary); color: white;">
+        <div class="container">
+            <h1 class="display-5 fw-bold mb-2">LPENHS History</h1>
+            <p class="lead mb-0 text-light opacity-75">A journey of growth, dedication, and quality education.</p>
+        </div>
+    </div>
+
+    <main class="container mb-5">
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="timeline">
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="timeline-content card shadow-sm border-0 rounded-4 p-4">
+                            <h3 class="fw-bold text-primary-custom mb-2">1986: Humble Beginnings</h3>
+                            <p class="text-muted mb-0" style="line-height: 1.7;">Las Pinas East National High School started brightening lives when the principal of CAA Elementary School, Mr. Zoro Zapanta, decided to widen the scope of his school by welcoming high school students. He started with a humble beginning of two first-year sections and a second-year section – all of which held classes after the dismissal of the elementary students.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="timeline-content card shadow-sm border-0 rounded-4 p-4">
+                            <h3 class="fw-bold text-primary-custom mb-2">1989: A Dedicated Campus</h3>
+                            <p class="text-muted mb-0" style="line-height: 1.7;">Enrollment continued increasing. Mrs. Purificacion Aranda and Mrs. Ma. Luisa Santos referred to then municipal mayor, Hon. Rosalino Riguera, for an adequate school site. Resolution No. 116.89 was adopted, granting a 4,000 square meter open space in Verdant Acres Subdivision. A 10-classroom, 2-storey building immediately followed.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-door-open"></i>
+                        </div>
+                        <div class="timeline-content card shadow-sm border-0 rounded-4 p-4">
+                            <h3 class="fw-bold text-primary-custom mb-2">1990 - 1991: Opening Doors</h3>
+                            <p class="text-muted mb-3" style="line-height: 1.7;">After laborious efforts, including 100,000.00 for comfort rooms and 56,000.00 for electrical systems sanctioned by the mayor, LPENHS finally opened its doors for all qualified high school students in S.Y. 1990-1991.</p>
+                            <p class="text-muted mb-0" style="line-height: 1.7;">During the direction of Dr. Isabelita Z. Montesa, the DPWH Building came to existence—a 2-storey building with 6 rooms (1 industrial and 5 academic) amounting to 5,131,960.00 from National funds.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <div class="timeline-content card shadow-sm border-0 rounded-4 p-4">
+                            <h3 class="fw-bold text-primary-custom mb-2">1991 - 1993: Independence</h3>
+                            <p class="text-muted mb-0" style="line-height: 1.7;">Ms. Maria Lucia R. Santos succeeded in acquiring the school’s independence funded by the Local gov’t. S.Y. 1992-1993 saw 2,615 enrollees and 334 graduates. During 1992, the Pimentel Bldg was added: a 2-storey building housing canteens and faculties, costing 3,462,840.00.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="timeline-content card shadow-sm border-0 rounded-4 p-4">
+                            <h3 class="fw-bold text-primary-custom mb-2">1993 - 1999: Reaching National Status</h3>
+                            <p class="text-muted mb-3" style="line-height: 1.7;">Supervised by Ms. Andrelina J. Villanueva, the school saw rapid growth, reaching 4,964 enrollees by S.Y. 1997-1998. Infrastructures like SEDP 1, SEDP 2 (1993), and the impressive 3-storey Aguilar bldg (1996) with 15 rooms were constructed.</p>
+                            <div class="alert alert-info border-0 bg-opacity-10 mb-0">
+                                <strong>1997 Milestone:</strong> After bravely tackling all hurdles, the Department of Education recognized the school’s accomplishments and awarded it <strong>National Status</strong>.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="timeline-content card shadow-sm border-0 rounded-4 p-4">
+                            <h3 class="fw-bold text-primary-custom mb-2">2002 - 2008: Continuous Expansion</h3>
+                            <p class="text-muted mb-0" style="line-height: 1.7;">Under Mrs. Eugenia V. Guerra, enrollment peaked at over 6,165 students. Further expansion included the "New Bldg" in 2006 and the "Principal Led" building in 2007 to accommodate the massive student body and enhance educational facilities.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon bg-warning text-dark">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="timeline-content card shadow-sm border-0 rounded-4 p-4 border-start border-4 border-warning">
+                            <h3 class="fw-bold text-primary-custom mb-2">Present Day</h3>
+                            <p class="text-muted mb-0" style="line-height: 1.7;">Today, Las Pinas East National High School has tackled all endeavors and brought all the lessons with its every trod. Presently managed by Ms. Phondora S. Capistrano, the school continually grows. Up to now, it remains faithful to its calling – providing quality education and the best student training to produce globally competent students that our society will be proud of.</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="text-end mt-4">
+                    <p class="text-muted small"><i class="fas fa-info-circle me-1"></i> Source: <a href="https://thebluepalm.wordpress.com/2010/03/29/lpenhs-history/" class="text-decoration-none" target="_blank">The Blue Palm Archives</a></p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-section pt-5 pb-3">
+        <div class="container">
+            <div class="row g-5 mb-5 mt-2">
+                <div class="col-lg-6">
+                    <div class="pe-lg-5">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="footer-icon-wrapper">
+                                <img src="images/Optimized-LR_favicon.jpg" width="40" class="rounded-circle bg-white p-1" alt="Logo" onerror="this.src='https://via.placeholder.com/40'">
+                            </div>
+                            <h4 class="fw-bold mb-0">LASER-web</h4>
+                        </div>
+                        <p class="mb-4 fs-6 text-secondary" style="line-height: 1.6;">Empowering the students and faculty of Las Piñas East National High School through seamless digital integration and accessible resources.</p>
+                        
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <i class="fas fa-map-marker-alt mt-1 fs-5"></i>
+                            <div>
+                                <strong>Las Piñas East National High School</strong><br>
+                                <span class="text-secondary">Kasoy St., Verdant Acres Subd.,<br>Pamplona III, Las Piñas City</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <i class="fas fa-phone-alt fs-5"></i>
+                            <a href="tel:(02)88733117" class="text-decoration-none phone-link">(02) 8-873-3117</a>
+                        </div>
+                        
+                        <ul class="list-unstyled d-flex gap-4 mb-0 mt-4">
+                            <li><a href="https://www.facebook.com/profile.php?id=100084733710812" target="_blank" class="social-icon"><i class="fab fa-facebook fa-2x"></i></a></li>
+                            <li><a href="mailto:305434@depedlaspinas.ph" class="social-icon"><i class="fas fa-envelope fa-2x"></i></a></li>
+                            <li><a href="https://www.instagram.com/lpenhs305434/" target="_blank" class="social-icon"><i class="fab fa-instagram fa-2x"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCnb9HCbZt0ViL-a7O4MeIpg" target="_blank" class="social-icon"><i class="fab fa-youtube fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h5 class="fw-bold mb-4 text-uppercase">Campus Location</h5>
+                    <div class="map-container shadow-sm">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.6300994116843!2d120.98595707584166!3d14.448508986020586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d22b27db7935%3A0xe5452f1b8f0477e!2sLas%20Pinas%20East%20National%20High%20School!5e0!3m2!1sen!2sph!4v1698745672199!5m2!1sen!2sph" width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="border-light opacity-25 mb-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-2 mb-md-0 small text-secondary">© 2026 LPENHS-EastLink Creators. All rights reserved.</p>
+                <p class="mb-0 small text-secondary">Designed for LPENHS</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
